@@ -2,6 +2,8 @@
   (:require [cljs.pprint :refer [pprint]]
             [x11 :as x11]))
 
+;; Based on: https://github.com/sidorares/node-x11/issues/69
+
 (defn ^:export start []
   (.createClient
     x11
